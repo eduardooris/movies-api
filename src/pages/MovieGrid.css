@@ -63,6 +63,13 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
+        text-align: center;
+    }
+
+    .movies-container img {
+        margin: auto;
     }
 }
