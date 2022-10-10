@@ -43,8 +43,10 @@ function Movie() {
         <div className="movie-page">
             {movie && <>
             <MovieCard movie={movie}
-            showLink={false}/>
+            showLink={false} />
             <p className="tagline">{movie.tagline}</p>
+            <div className="container">
+
             <div className="info">
                 <h3>
                     <BsWallet2/> Orçamento
@@ -69,6 +71,7 @@ function Movie() {
                 </h3>
                 <p>{movie.overview}</p>
                 <Link to='/' className='btn'>Voltar</Link>
+            </div>
             </div>
             </>}
         </div>

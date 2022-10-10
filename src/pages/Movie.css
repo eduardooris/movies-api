@@ -15,6 +15,10 @@
     text-align: center;
 }
 
+.movie-card img{
+    width: 350px;
+}
+
 .movie-page .movie-card img,
 .movie-page .movie-card h2,
 .movie-page .movie-card p{
@@ -75,4 +79,25 @@
 .btn:hover{
     background-color: transparent;
     color: #00ff88cc;
+}
+
+@media (max-width: 600px) {
+    .movie-card img{
+        width: 230px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;  
+        text-align: justify;
+        }
+    .container .description{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 50%;
+    }
 }
